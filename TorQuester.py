@@ -9,6 +9,8 @@ import time
 import subprocess
 import sys
 
+
+subprocess.run(["sudo", "service", "tor", "restart"])
 def get_tor_session():
     session = requests.session()
     # Tor uses the 9050 port as the default socks port
@@ -36,6 +38,8 @@ while i < 4:
 		i = i + 1
 		time.sleep(1.5)
 	except KeyboardInterrupt:
+		subprocess.run(["sudo", "service", "tor", "stop"])
 		print('\n')
 		print('\nUser interrupted process -- Exiting!')
+		subprocess.run(["sudo", "service", "tor", "start"])
 		break
