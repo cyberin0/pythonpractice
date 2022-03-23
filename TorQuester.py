@@ -42,4 +42,5 @@ while i < 4:
 		print('\n')
 		print('\nUser interrupted process -- Exiting!')
 		subprocess.run(["sudo", "service", "tor", "start"])
+		time.sleep(1)
 		break
