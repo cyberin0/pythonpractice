@@ -4,3 +4,6 @@ TorQuester.py is a three step automated tool to simulate Tor traffic to a webpag
 On loop, a Tor session, sends a request to the target domain, and them disconnects from the session.
 
 ARP_pipe_NMAP.py is my attempt at using temp files and piping to scan a local network and then scan the found addresses with my usual nmap commands.
+
+
+NmapScanner, BannerGrab, and PortScanner were all created together. They are a WIP to learn importing personal modules and to learn to work with python-nmap package and argparse library.
